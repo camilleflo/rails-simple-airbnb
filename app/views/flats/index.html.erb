@@ -1,0 +1,27 @@
+
+<h4 class="mb-4">Card Deck Flats</h4>
+<div class="card-deck">
+
+
+       
+       <% @flats.each do |flat| %>
+       <div class="card-product">
+         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <div class="card-product-infos">
+      <tr>
+        <td><%= flat.name %></td>
+        <td><%= flat.adress %></td>
+        <td><%= flat.description %></td>
+        <td><%= flat.price_per_night %></td>
+        <td><%= flat.number_of_guests %></td>
+        <td><%= link_to 'Show', flat %></td>
+        <td><%= link_to 'Edit', edit_flat_path(flat) %></td>
+        <td><%= link_to 'Destroy', flat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  
+  </div>
+</div>
+
+
+<%= link_to 'New Flat', new_flat_path %>

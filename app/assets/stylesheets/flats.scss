@@ -1,0 +1,23 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@media (min-width: 576px) {
+     .card-columns {
+         column-count: 2;
+    }
+}
+ @media (min-width: 768px) {
+     .card-columns {
+         column-count: 3;
+    }
+}
+ @media (min-width: 992px) {
+     .card-columns {
+         column-count: 4;
+    }
+}
+ @media (min-width: 1200px) {
+     .card-columns {
+         column-count: 5;
+    }
+}
